@@ -828,11 +828,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   filter: drop-shadow(0 0 28px rgba(255,45,149,0.45));
   animation: spin 34s linear infinite;
 }
-/* Footer: real Buy Me a Coffee only (medallion + coffee GIF removed) */
+/* Footer: BMC button (left) + QR (right). No medallion, no coffee GIF. */
 .footer-bmc-row {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: clamp(20px, 4vw, 48px);
+  flex-wrap: wrap;
   margin: 0 auto 36px;
 }
 .footer-badge {
@@ -849,11 +851,25 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   transform: translateY(-3px) scale(1.04);
   filter: drop-shadow(0 0 26px rgba(255,221,0,0.85));
 }
+.footer-badge-qr img {
+  width: 140px; height: 140px;
+  border-radius: 14px;
+  background: #fff;
+  padding: 8px;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 14px rgba(255,158,44,0.45)) drop-shadow(0 4px 16px rgba(0,0,0,0.4));
+}
+.footer-badge-qr:hover {
+  transform: translateY(-3px) scale(1.04);
+  filter: drop-shadow(0 0 22px rgba(255,158,44,0.75));
+}
 @media (max-width: 600px) {
   .footer-badge-bmc img { height: 48px; }
+  .footer-badge-qr img { width: 112px; height: 112px; }
 }
-/* hide any leftover footer medallion if present */
+/* hide any leftover footer medallion / coffee gif if present */
 .footer-medallion { display: none !important; }
+.footer-badge-right { display: none !important; }
 .signature {
   display: block;
   width: 960px;   /* 4x */
@@ -1593,7 +1609,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   <div class="container">
     <div class="footer-bmc-row">
       <a href="https://www.buymeacoffee.com/cfunkycream" target="_blank" rel="noopener noreferrer" class="footer-badge footer-badge-bmc" aria-label="Buy me some SUNO credits on Buy Me a Coffee">
-        <img src="footer/bmc-suno-badge.png?v=30" alt="Buy me some SUNO credits" width="280" height="52" loading="lazy">
+        <img src="footer/bmc-suno-badge.png?v=31" alt="Buy me some SUNO credits" width="280" height="52" loading="lazy">
+      </a>
+      <a href="https://www.buymeacoffee.com/cfunkycream" target="_blank" rel="noopener noreferrer" class="footer-badge footer-badge-qr" aria-label="Scan QR code to buy me a coffee">
+        <img src="footer/bmc-qr.png?v=31" alt="Buy Me a Coffee QR code" width="140" height="140" loading="lazy">
       </a>
     </div>
     <div class="footer-grid">
