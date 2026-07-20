@@ -342,10 +342,14 @@ button { font-family: inherit; }
 }
 
 .marquee {
-  overflow: hidden; padding: 20px 0;
+  overflow: hidden;
+  padding: 22px 0;
+  margin-top: clamp(32px, 6vh, 80px); /* clear of hero LLC logo */
   border-top: 1px solid rgba(255,45,149,0.15);
   border-bottom: 1px solid rgba(255,45,149,0.15);
   background: rgba(255,45,149,0.02);
+  position: relative;
+  z-index: 5;
 }
 .marquee-track {
   display: flex; gap: 32px; white-space: nowrap;
@@ -1014,8 +1018,8 @@ a.logo-chip:focus-visible {
 
 /* ===== FUNK BROS LIVING HERO ===== */
 .hero{padding:0;display:block;min-height:100vh}
-.hero-stage{position:relative;width:100%;min-height:100vh;overflow:hidden;container-type:inline-size;background:#05040c}
-.hero-stage .hs-base{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero-stage{position:relative;width:100%;min-height:100vh;min-height:100svh;overflow:hidden;container-type:inline-size;background:#05040c;padding-bottom:clamp(56px,9vh,120px);box-sizing:border-box}
+.hero-stage .hs-base{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 58%}
 /* Circuit glow — masked OFF faces/hats/arms (left side of photo) */
 .hs-glow{
   position:absolute;left:28.5%;top:0;width:59.5%;
@@ -1091,10 +1095,12 @@ a.logo-chip:focus-visible {
 .hs-title .hs-w{display:block;font-size:4.9cqw;letter-spacing:.01em;background:linear-gradient(100deg,#ff2d95 0%,#ff9e2c 48%,#2d9bff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 1cqw rgba(255,45,149,.55)) drop-shadow(0 0 2.4cqw rgba(45,155,255,.4))}
 .hs-title .hs-v{display:block;margin-top:.3cqw;font-size:2.9cqw;letter-spacing:.1em;background:linear-gradient(100deg,#2d9bff 0%,#ff2d95 55%,#ff9e2c 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 .8cqw rgba(148,90,255,.55))}
 @media (max-width:900px){
-  .hero-stage{min-height:70svh}
+  .hero-stage{min-height:80svh;padding-bottom:clamp(64px,12vh,120px)}
+  .hero-stage .hs-base{object-position:center 64%}
   .hs-title{left:6%;right:6%;top:3%}
   .hs-title .hs-w{font-size:9cqw}
   .hs-title .hs-v{font-size:5.4cqw}
+  .marquee{margin-top:clamp(28px,5vh,56px)}
 }
 
 /* ===== GLASS MARBLE CARD ICONS — gentle idle + mixed effects ===== */
