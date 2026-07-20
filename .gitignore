@@ -1,0 +1,10 @@
+# Full installer zips (use appchunks/ instead — GitHub 100MB limit)
+Lyricist.zip
+Lyricist-4.1.3.012.zip
+*.exe
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+# local previews
+marbles/_preview_*.png

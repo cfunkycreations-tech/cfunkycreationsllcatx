@@ -1,9 +1,10 @@
 # Footer badges/QR around the spinning medallion (bottom-center)
 
 ## LEFT of the spinning medallion
-Buy Me a Coffee badge — "Buy me some SUNO credits! 🎵":
+Buy Me a Coffee badge — "Buy me some SUNO credits! 🎵"  
+**Self-hosted** (CDN hotlink was breaking on live): `footer/bmc-suno-badge.svg`
 ```html
-<a href="https://www.buymeacoffee.com/cfunkycream"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me some SUNO credits!😍&emoji=🎵&slug=cfunkycream&button_colour=BD5FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+<a href="https://www.buymeacoffee.com/cfunkycream"><img src="footer/bmc-suno-badge.svg" alt="Buy me some SUNO credits" width="260" height="60" /></a>
 ```
 
 ## RIGHT of the spinning medallion
