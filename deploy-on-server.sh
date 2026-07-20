@@ -3,7 +3,7 @@
 # Run from: ~/domains/cfunkycreationsllc.com/public_html/
 set -e
 cd ~/domains/cfunkycreationsllc.com/public_html/ || exit 1
-SHA="REPLACE_SHA"
+SHA="8a384d920d81bc465ca912f95fa2f52d3a430539"
 echo "Using commit SHA: $SHA"
 
 # --- 1) Pull latest hero + marbles + footer via raw github ---
