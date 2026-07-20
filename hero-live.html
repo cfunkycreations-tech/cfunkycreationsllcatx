@@ -976,6 +976,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .hs-title .hs-w{font-size:9cqw}
   .hs-title .hs-v{font-size:5.4cqw}
 }
+
+/* ===== GLASS MARBLE CARD ICONS ===== */
+.feature-marble{display:inline-block;line-height:0}
+.feature-marble img{width:104px;height:104px;object-fit:contain;transition:filter .45s ease,transform .45s ease;filter:drop-shadow(0 4px 10px rgba(0,0,0,.5)) drop-shadow(0 0 10px rgba(255,45,149,.22))}
+.feature-card:hover .feature-marble img{filter:drop-shadow(0 6px 14px rgba(0,0,0,.5)) drop-shadow(0 0 18px rgba(255,45,149,.6)) drop-shadow(0 0 34px rgba(255,158,44,.35));animation:marbleFloat 4s ease-in-out infinite}
+@keyframes marbleFloat{0%,100%{transform:translateY(-2px)}50%{transform:translateY(-9px)}}
 </style>
 
 <script type="application/ld+json">
@@ -1089,14 +1095,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
     <div class="features-grid">
       <article class="feature-card tilt fade-in" data-tilt>
-        <span class="feature-icon" aria-hidden="true">🎵</span>
+        <span class="feature-icon feature-marble" aria-hidden="true"><img src="marbles/songwriter_static.png" data-gif="marbles/songwriter.gif" data-static="marbles/songwriter_static.png" alt="" loading="lazy" width="280" height="280"></span>
         <h3 class="feature-name">Songwriter</h3>
         <p class="feature-desc">Full AI lyric generator. Set genre, mood, topic, and artist influence. The AI writes your song verse by verse, line by line.</p>
         <span class="feature-badge">AI POWERED</span>
       </article>
 
       <article class="feature-card tilt fade-in" data-tilt>
-        <span class="feature-icon" aria-hidden="true">👻</span>
+        <span class="feature-icon feature-marble" aria-hidden="true"><img src="marbles/ghostrider_static.png" data-gif="marbles/ghostrider.gif" data-static="marbles/ghostrider_static.png" alt="" loading="lazy" width="280" height="280"></span>
         <h3 class="feature-name">Ghost Rider</h3>
         <p class="feature-desc">Analyzes any artist's writing style, then helps you write a brand new original song in that exact style. Never copies — always original.</p>
         <span class="feature-badge feature-badge-hot">SIGNATURE TOOL</span>
@@ -1110,14 +1116,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
       </article>
 
       <article class="feature-card tilt fade-in" data-tilt>
-        <span class="feature-icon" aria-hidden="true">📚</span>
+        <span class="feature-icon feature-marble" aria-hidden="true"><img src="marbles/thesaurus_static.png" data-gif="marbles/thesaurus.gif" data-static="marbles/thesaurus_static.png" alt="" loading="lazy" width="280" height="280"></span>
         <h3 class="feature-name">Thesaurus</h3>
         <p class="feature-desc">Synonyms, antonyms, and related words. Free, no AI key needed. Find the exact word your line is missing.</p>
         <span class="feature-badge">FREE · NO KEY</span>
       </article>
 
       <article class="feature-card tilt fade-in" data-tilt>
-        <span class="feature-icon" aria-hidden="true">📕</span>
+        <span class="feature-icon feature-marble" aria-hidden="true"><img src="marbles/dictionary_static.png" data-gif="marbles/dictionary.gif" data-static="marbles/dictionary_static.png" alt="" loading="lazy" width="280" height="280"></span>
         <h3 class="feature-name">Dictionary</h3>
         <p class="feature-desc">English and Spanish definitions, pronunciation, and example sentences. Free, no AI key needed.</p>
         <span class="feature-badge">FREE · BILINGUAL</span>
@@ -1131,14 +1137,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
       </article>
 
       <article class="feature-card tilt fade-in" data-tilt>
-        <span class="feature-icon" aria-hidden="true">🪄</span>
+        <span class="feature-icon feature-marble" aria-hidden="true"><img src="marbles/songforge_static.png" data-gif="marbles/songforge.gif" data-static="marbles/songforge_static.png" alt="" loading="lazy" width="280" height="280"></span>
         <h3 class="feature-name">Song Forge</h3>
         <p class="feature-desc">One click, whole song. The AI writes the lyrics AND paints matching cover art — or flip it and start from an image that inspires you.</p>
         <span class="feature-badge feature-badge-hot">LYRICS + COVER ART</span>
       </article>
 
       <article class="feature-card tilt fade-in" data-tilt>
-        <span class="feature-icon" aria-hidden="true">🎙️</span>
+        <span class="feature-icon feature-marble" aria-hidden="true"><img src="marbles/recordingbooth_static.png" data-gif="marbles/recordingbooth.gif" data-static="marbles/recordingbooth_static.png" alt="" loading="lazy" width="280" height="280"></span>
         <h3 class="feature-name">Recording Booth</h3>
         <p class="feature-desc">Capture takes right inside the app. Play them back while you write, keep the keepers, and export studio-ready WAV files.</p>
         <span class="feature-badge">RECORD & EXPORT</span>
@@ -1780,5 +1786,12 @@ document.addEventListener('keydown', (e) => {
 });
 
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1b3a8bf994d290b',t:'MTc4NDA2NDk0Nw=='};var a=document.createElement('script');a.src='cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1b3a8bf994d290b',t:'MTc4NDA2NDk0Nw=='};var a=document.createElement('script');a.src='cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
+/* marble hover: static PNG until hover, then the living GIF */
+document.querySelectorAll('.feature-marble img[data-gif]').forEach(function(im){
+  var card = im.closest('.feature-card') || im;
+  card.addEventListener('mouseenter', function(){ im.src = im.dataset.gif; });
+  card.addEventListener('mouseleave', function(){ im.src = im.dataset.static; });
+});
+</script></body>
 </html>
